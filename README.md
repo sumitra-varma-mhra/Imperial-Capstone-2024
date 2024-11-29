@@ -21,20 +21,32 @@ TweetDatetime - Tweet post datetime.
 
 ## MODEL 
 The models used in this solution include : 
-Classification of tweets based on positive/ negative classes
+Logistic Regression Classification of tweets based on positive/ negative classes
 Naive Bayes 
 K Nearest Neighbour implementation
 Decision trees
-Random forests
-Support Vector Machines
-Deep Learning Models 
 
 ## HYPERPARAMETER OPTIMISATION
-Description of which hyperparameters you have and how you chose to optimise them. 
+
+train_test_split 
+- test_size=0.2:
+
+TfidfVectorizer 
+- max_features=5000
+- max_df=1.0 and min_df=1 
+- use_idf=True: 
+- LogisticRegression 
+- penalty='l2'
+- C=1.0
+- solver='lbfgs'
+- max_iter=100
+- multi_class='auto'
+
+KNN model 
+- n_neighbours = 3 
 
 ## RESULTS
-A summary of your results and what you can learn from your model 
 
-You can include images of plots using the code below:
-![Screenshot](image.png)
-
+KNN model had the least accuracy of 0.55325
+Logistic Regression had the highest accuracy of 0.909133
+Naive Bayes model had an accuracy of 0.807433
