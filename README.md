@@ -19,12 +19,17 @@ TweetContent - Original tweet text content.
 TweeterUsername	- Username of the tweeter. Using the official Twitter API, it can be used to map each tweet with the tweeter's profile (e.g. followers and following lists) and tweet history.
 TweetDatetime - Tweet post datetime.
 
+The subset used for this project contains data from the year 2022.
+
 ## MODEL 
 The models used in this solution include : 
+
 Logistic Regression Classification of tweets based on positive/ negative classes
+
 Naive Bayes 
+
 K Nearest Neighbour implementation
-Decision trees
+
 
 ## HYPERPARAMETER OPTIMISATION
 
@@ -48,5 +53,7 @@ KNN model
 ## RESULTS
 
 KNN model had the least accuracy of 0.55325
+
 Logistic Regression had the highest accuracy of 0.909133
+
 Naive Bayes model had an accuracy of 0.807433
